@@ -1,0 +1,48 @@
+@import 'variables';
+
+html * {
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.home {
+  background: $background-color
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+}
+.navbar-brand:hover {
+  color: $element-color !important;
+}
+
+.secondary {
+  background: $secondary-color;
+}
+
+.page {
+  padding: 0;
+}
+
+.navbar {
+  margin: 0;
+  border-radius: 0;
+  background-color: $secondary-color;
+  border: 0;
+}
+
+.content {
+  position: absolute;
+  height: calc(100% - #{$menu-height});
+  width: 100%;
+  padding-top: 0;
+}
+
+.fa:hover {
+  color: $element-color !important;
+}
+
+.logo img {
+  display: block;
+  width: auto;
+  height: $menu-height - 10;
+}
