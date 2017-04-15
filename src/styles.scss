@@ -1,11 +1,11 @@
-@import 'variables';
+@import 'assets/css/variables';
 
 html * {
   font-family: 'Archivo Narrow', sans-serif;
 }
 
-.home {
-  background: $background-color
+body {
+  background-color: $background-color;
 }
 
 .navbar-brand {
