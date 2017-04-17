@@ -8,15 +8,82 @@ body {
   background-color: $background-color;
 }
 
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+.navbar-brand:hover {
+  color: $element-color !important;
+}
+
+#middleMenu li {
+  width: 70px;
+  .menu-text {
+    white-space: nowrap;
+    text-align: center;
+    display: none;
+    color: $element-color !important;
+  }
+  .menu-image {
+    //display: block;
+    margin-left: 8px;
+    margin-top: -5px;
+    visibility: visible;
+    opacity: 1;
+    animation: fadein $fade_time;
+  }
+}
+
+#middleMenu li:hover {
+  color: $element-color !important;
+  .menu-image {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeout $fade_time;
+  }
+  .menu-text {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    animation: fadein $fade_time;
+  }
+}
+
+.fa:hover {
+  color: $element-color !important;
+}
+
+.fa, .navbar-brand {
+  transition: color 0.2s ease;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .active {
   color: $element-color !important;
 }
 
-.navbar-brand {
-    color: #ffffff !important;
-}
-.navbar-brand:hover {
-  color: $element-color !important;
+.menu-name {
+  margin: 0;
 }
 
 .secondary {
@@ -39,10 +106,6 @@ body {
   height: calc(100% - #{$menu-height});
   width: 100%;
   padding-top: 0;
-}
-
-.fa:hover {
-  color: $element-color !important;
 }
 
 .logo img {

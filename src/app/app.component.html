@@ -9,9 +9,43 @@
     </div>
     <div class="navbar-collapse collapse">
       <!-- Social links -->
-      <ul class="nav navbar-nav navbar-center">
-        <li><a id="home" class="fa fa-home fa-2x menu-link" (mouseover)="over()" routerLink="/home" routerLinkActive="active"></a></li>
-        <li><a id="about" class="fa fa-user-secret fa-2x menu-link" routerLink="/about" routerLinkActive="active"></a></li>
+      <ul id="middleMenu" class="nav navbar-nav navbar-center">
+        <li>
+          <a id="home" class="menu-link" routerLink="/home" routerLinkActive="active">
+            <i class="fa fa-home fa-2x menu-image"></i>
+            <i class="menu-text">HOME</i>
+          </a>
+        </li>
+        <li>
+          <a id="about" class="menu-link" routerLink="/about" routerLinkActive="active" >
+            <i class="fa fa-user-secret fa-2x menu-image"></i>
+            <i class="menu-text">ABOUT</i>
+          </a>
+        </li>
+        <li>
+          <a id="skills" class="menu-link" routerLink="/skills" routerLinkActive="active" >
+            <i class="fa fa-code fa-2x menu-image"></i>
+            <i class="menu-text">SKILLS</i>
+          </a>
+        </li>
+        <li>
+          <a id="contact" class="menu-link" routerLink="/contact" routerLinkActive="active" >
+            <i class="fa fa-envelope fa-2x menu-image"></i>
+            <i class="menu-text">CONTACT</i>
+          </a>
+        </li>
+        <li>
+          <a id="work" class="menu-link" routerLink="/work" routerLinkActive="active" >
+            <i class="fa fa-cog fa-2x menu-image"></i>
+            <i class="menu-text">MY WORK</i>
+          </a>
+        </li>
+        <li>
+          <a id="CV" class="menu-link" routerLink="/CV" routerLinkActive="active" >
+            <i class="fa fa-id-card fa-2x menu-image"></i>
+            <i class="menu-text">CV</i>
+          </a>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>

@@ -4,14 +4,60 @@ html * {
 body {
   background-color: #252627; }
 
-.active {
-  color: #08fdd8 !important; }
-
 .navbar-brand {
   color: #ffffff !important; }
 
 .navbar-brand:hover {
   color: #08fdd8 !important; }
+
+#middleMenu li {
+  width: 70px; }
+  #middleMenu li .menu-text {
+    white-space: nowrap;
+    text-align: center;
+    display: none;
+    color: #08fdd8 !important; }
+  #middleMenu li .menu-image {
+    margin-left: 8px;
+    margin-top: -5px;
+    visibility: visible;
+    opacity: 1;
+    animation: fadein 1s; }
+
+#middleMenu li:hover {
+  color: #08fdd8 !important; }
+  #middleMenu li:hover .menu-image {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    animation: fadeout 1s; }
+  #middleMenu li:hover .menu-text {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    animation: fadein 1s; }
+
+.fa:hover {
+  color: #08fdd8 !important; }
+
+.fa, .navbar-brand {
+  transition: color 0.2s ease; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+.active {
+  color: #08fdd8 !important; }
+
+.menu-name {
+  margin: 0; }
 
 .secondary {
   background: #181818; }
@@ -30,9 +76,6 @@ body {
   height: calc(100% - 60px);
   width: 100%;
   padding-top: 0; }
-
-.fa:hover {
-  color: #08fdd8 !important; }
 
 .logo img {
   display: block;

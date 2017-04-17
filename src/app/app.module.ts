@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { AboutComponent } from "./about/about.component";
+import { SkillsComponent } from "./skills/skills.component";
+import { ContactComponent } from "./contact/contact.component";
+import { WorkComponent } from "./work/work.component";
+import { CVComponent } from "./CV/CV.component";
 
 
 @NgModule({
@@ -19,7 +23,11 @@ import { AboutComponent } from "./about/about.component";
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent,
+    ContactComponent,
+    WorkComponent,
+    CVComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
