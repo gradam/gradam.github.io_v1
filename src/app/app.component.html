@@ -1,35 +1,37 @@
 <body class="home">
 
 <div class="container-fluid page">
-    <div class="nav navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    JAKUB SEMIK
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <!-- Social links -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="fa fa-github fa-lg social-link" rel="#" href="https://github.com/gradam">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="fa fa-twitter fa-lg social-link" rel="#" href="https://twitter.com/@Jakub_Semik">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="fa fa-linkedin fa-lg social-link" rel="#" href="https://www.linkedin.com/in/jakub-semik-a4981012a/">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <div class="nav navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        JAKUB SEMIK
+      </a>
     </div>
-    <div id="particles-js" class="content">
-
+    <div class="navbar-collapse collapse">
+      <!-- Social links -->
+      <ul class="nav navbar-nav navbar-center">
+        <li><a id="home" class="fa fa-home fa-2x menu-link" (mouseover)="over()" routerLink="/home" routerLinkActive="active"></a></li>
+        <li><a id="about" class="fa fa-user-secret fa-2x menu-link" routerLink="/about" routerLinkActive="active"></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="fa fa-github fa-lg social-link" rel="#" href="https://github.com/gradam">
+          </a>
+        </li>
+        <li>
+          <a class="fa fa-twitter fa-lg social-link" rel="#" href="https://twitter.com/@Jakub_Semik">
+          </a>
+        </li>
+        <li>
+          <a class="fa fa-linkedin fa-lg social-link" rel="#" href="https://www.linkedin.com/in/jakub-semik-a4981012a/">
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
+  <div id="particles-js" class="content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
 </body>

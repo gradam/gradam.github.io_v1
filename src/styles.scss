@@ -8,6 +8,10 @@ body {
   background-color: $background-color;
 }
 
+.active {
+  color: $element-color !important;
+}
+
 .navbar-brand {
     color: #ffffff !important;
 }

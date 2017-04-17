@@ -19,4 +19,8 @@ export class AppComponent implements OnInit {
       console.log('callback - particles.js config loaded');
     });
   }
+
+  over(): void {
+
+  }
 }

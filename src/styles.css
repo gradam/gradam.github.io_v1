@@ -4,6 +4,9 @@ html * {
 body {
   background-color: #252627; }
 
+.active {
+  color: #08fdd8 !important; }
+
 .navbar-brand {
   color: #ffffff !important; }
 
@@ -36,4 +39,4 @@ body {
   width: auto;
   height: 50px; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
