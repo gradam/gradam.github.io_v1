@@ -18,7 +18,7 @@ import { CVComponent } from "./CV/CV.component";
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   declarations: [
     AppComponent,

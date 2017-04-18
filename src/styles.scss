@@ -16,6 +16,17 @@ body {
   color: $element-color !important;
 }
 
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 #middleMenu li {
   width: 70px;
   .menu-text {
@@ -101,15 +112,43 @@ body {
   border: 0;
 }
 
-.content {
+.center-content {
   position: absolute;
-  height: calc(100% - #{$menu-height});
-  width: 100%;
-  padding-top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-.logo img {
-  display: block;
-  width: auto;
-  height: $menu-height - 10;
+.text-line {
+  margin-bottom: -20px
+}
+
+.letter-container {
+  display: inline-block;
+  text-align: center;
+  .initial-letter {
+    color: $element-color;
+  }
+  .letter {
+    font-weight: bold;
+    font-size: 60px;
+    transition: 0.2s;
+  }
+  .letter:hover {
+    color: $element-color;
+  }
+}
+
+.btn-contact {
+  margin-top: 50px;
+  background-color: transparent;
+  color: $element-color;
+  border-color: $element-color !important;
+}
+
+.btn-contact:hover {
+  //animation: jello 2s;
+  background-color: $element-color;
+  color: black;
 }
