@@ -1,0 +1,218 @@
+.wrap {
+  perspective: 800px;
+  perspective-origin: 50% 100px; }
+
+/* keyframes for rotating animation */
+@-webkit-keyframes spin {
+  from {
+    transform: rotateY(0); }
+  to {
+    transform: rotateY(360deg); } }
+@keyframes spin-vertical {
+  from {
+    transform: rotateX(0); }
+  to {
+    transform: rotateX(-360deg); } }
+@-moz-keyframes spinningH {
+  from {
+    -moz-transform: rotateX(0deg) rotateY(0deg); }
+  to {
+    -moz-transform: rotateX(360deg) rotateY(360deg); } }
+@-webkit-keyframes spinningH {
+  from {
+    -webkit-transform: rotateX(0deg) rotateY(0deg); }
+  to {
+    -webkit-transform: rotateX(360deg) rotateY(360deg); } }
+@-o-keyframes spinningH {
+  from {
+    -o-transform: rotateX(0deg) rotateY(0deg); }
+  to {
+    -o-transform: rotateX(360deg) rotateY(360deg); } }
+@-ms-keyframes spinningH {
+  from {
+    -ms-transform: rotateX(0deg) rotateY(0deg); }
+  to {
+    -ms-transform: rotateX(360deg) rotateY(360deg); } }
+@keyframes spinningH {
+  from {
+    transform: rotateX(0deg) rotateY(0deg); }
+  to {
+    transform: rotateX(360deg) rotateY(360deg); } }
+#container {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%; }
+
+.animate {
+  -webkit-animation: spinningH 12s infinite linear;
+  -moz-animation: spinningH 12s infinite linear;
+  -o-animation: spinningH 12s infinite linear;
+  -ms-animation: spinningH 12s infinite linear;
+  animation: spinningH 12s infinite linear; }
+
+@media (min-width: 1201px) {
+  #cube {
+    position: relative;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    -webkit-transition: -webkit-transform 2s linear;
+    -moz-transition: -moz-transform 2s linear;
+    -o-transition: -o-transform 2s linear;
+    -ms-transition: -ms-transform 2s linear;
+    transition: transform 2s linear;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+
+  #cube > div {
+    position: absolute;
+    height: 300px;
+    background-color: #3b3b3b;
+    width: 300px;
+    padding: 20px;
+    opacity: 0.5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-color: black;
+    background-size: 250px; }
+    #cube > div:nth-child(1) {
+      -webkit-transform: translateZ(150px);
+      -moz-transform: translateZ(149px);
+      -o-transform: translateZ(149px);
+      -ms-transform: translateZ(149px);
+      transform: translateZ(149px);
+      background-image: url("../../assets/img/cube/python.png"); }
+    #cube > div:nth-child(2) {
+      -webkit-transform: rotateY(90deg) translateZ(149px);
+      -moz-transform: rotateY(90deg) translateZ(149px);
+      -o-transform: rotateY(90deg) translateZ(149px);
+      -ms-transform: rotateY(90deg) translateZ(149px);
+      transform: rotateY(90deg) translateZ(149px);
+      background-image: url("../../assets/img/cube/django.png"); }
+    #cube > div:nth-child(3) {
+      -webkit-transform: rotateY(180deg) translateZ(149px);
+      -moz-transform: rotateY(180deg) translateZ(149px);
+      -o-transform: rotateY(180deg) translateZ(149px);
+      -ms-transform: rotateY(180deg) translateZ(149px);
+      transform: rotateY(180deg) translateZ(149px);
+      background-image: url("../../assets/img/cube/angular.png"); }
+    #cube > div:nth-child(4) {
+      -webkit-transform: rotateY(-90deg) translateZ(149px);
+      -moz-transform: rotateY(-90deg) translateZ(149px);
+      -o-transform: rotateY(-90deg) translateZ(149px);
+      -ms-transform: rotateY(-90deg) translateZ(149px);
+      transform: rotateY(-90deg) translateZ(149px);
+      background-image: url("../../assets/img/cube/linux.png"); }
+    #cube > div:nth-child(5) {
+      -webkit-transform: rotateX(-90deg) translateZ(149px) rotate(180deg);
+      -moz-transform: rotateX(-90deg) translateZ(149px) rotate(180deg);
+      -o-transform: rotateX(-90deg) translateZ(149px) rotate(180deg);
+      -ms-transform: rotateX(-90deg) translateZ(149px) rotate(180deg);
+      transform: rotateX(-90deg) translateZ(149px) rotate(180deg);
+      background-image: url("../../assets/img/cube/javascript.png"); }
+    #cube > div:nth-child(6) {
+      -webkit-transform: rotateX(90deg) translateZ(149px);
+      -moz-transform: rotateX(90deg) translateZ(149px);
+      -o-transform: rotateX(90deg) translateZ(149px);
+      -ms-transform: rotateX(90deg) translateZ(149px);
+      transform: rotateX(90deg) translateZ(149px);
+      background-image: url("../../assets/img/cube/postgresql.png"); } }
+@media (max-width: 1200px) {
+  #cube {
+    position: relative;
+    margin: 100px auto 0;
+    height: 200px;
+    width: 200px;
+    -webkit-transition: -webkit-transform 2s linear;
+    -moz-transition: -moz-transform 2s linear;
+    -o-transition: -o-transform 2s linear;
+    -ms-transition: -ms-transform 2s linear;
+    transition: transform 2s linear;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+
+  #cube > div {
+    position: absolute;
+    height: 200px;
+    background-color: #3b3b3b;
+    width: 200px;
+    padding: 20px;
+    opacity: 0.5;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-color: black;
+    background-size: 166.66667px; }
+    #cube > div:nth-child(1) {
+      -webkit-transform: translateZ(150px);
+      -moz-transform: translateZ(99px);
+      -o-transform: translateZ(99px);
+      -ms-transform: translateZ(99px);
+      transform: translateZ(99px);
+      background-image: url("../../assets/img/cube/python.png"); }
+    #cube > div:nth-child(2) {
+      -webkit-transform: rotateY(90deg) translateZ(99px);
+      -moz-transform: rotateY(90deg) translateZ(99px);
+      -o-transform: rotateY(90deg) translateZ(99px);
+      -ms-transform: rotateY(90deg) translateZ(99px);
+      transform: rotateY(90deg) translateZ(99px);
+      background-image: url("../../assets/img/cube/django.png"); }
+    #cube > div:nth-child(3) {
+      -webkit-transform: rotateY(180deg) translateZ(99px);
+      -moz-transform: rotateY(180deg) translateZ(99px);
+      -o-transform: rotateY(180deg) translateZ(99px);
+      -ms-transform: rotateY(180deg) translateZ(99px);
+      transform: rotateY(180deg) translateZ(99px);
+      background-image: url("../../assets/img/cube/angular.png"); }
+    #cube > div:nth-child(4) {
+      -webkit-transform: rotateY(-90deg) translateZ(99px);
+      -moz-transform: rotateY(-90deg) translateZ(99px);
+      -o-transform: rotateY(-90deg) translateZ(99px);
+      -ms-transform: rotateY(-90deg) translateZ(99px);
+      transform: rotateY(-90deg) translateZ(99px);
+      background-image: url("../../assets/img/cube/linux.png"); }
+    #cube > div:nth-child(5) {
+      -webkit-transform: rotateX(-90deg) translateZ(99px) rotate(180deg);
+      -moz-transform: rotateX(-90deg) translateZ(99px) rotate(180deg);
+      -o-transform: rotateX(-90deg) translateZ(99px) rotate(180deg);
+      -ms-transform: rotateX(-90deg) translateZ(99px) rotate(180deg);
+      transform: rotateX(-90deg) translateZ(99px) rotate(180deg);
+      background-image: url("../../assets/img/cube/javascript.png"); }
+    #cube > div:nth-child(6) {
+      -webkit-transform: rotateX(90deg) translateZ(99px);
+      -moz-transform: rotateX(90deg) translateZ(99px);
+      -o-transform: rotateX(90deg) translateZ(99px);
+      -ms-transform: rotateX(90deg) translateZ(99px);
+      transform: rotateX(90deg) translateZ(99px);
+      background-image: url("../../assets/img/cube/postgresql.png"); } }
+.letter {
+  color: #08fdd8; }
+
+.center-content-left {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); }
+
+h2 {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  color: #adadad; }
+
+.row {
+  max-width: 100%; }
+
+/*# sourceMappingURL=about.component.css.map */

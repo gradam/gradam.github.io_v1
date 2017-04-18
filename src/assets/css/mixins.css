@@ -1,0 +1,9 @@
+.center-content-vertical {
+  top: 50%;
+  transform: translate(0%, -50%); }
+
+.center-content-horizontal {
+  left: 50%;
+  transform: translate(-50%, 0%); }
+
+/*# sourceMappingURL=mixins.css.map */

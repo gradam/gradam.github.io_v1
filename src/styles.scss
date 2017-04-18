@@ -8,6 +8,14 @@ body {
   background-color: $background-color;
 }
 
+@media (min-width: $break-size) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+
 .navbar-brand {
   color: #ffffff !important;
 }
@@ -43,21 +51,20 @@ body {
     opacity: 1;
     animation: fadein $fade_time;
   }
-}
-
-#middleMenu li:hover {
-  color: $element-color !important;
-  .menu-image {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    animation: fadeout $fade_time;
-  }
-  .menu-text {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    animation: fadein $fade_time;
+  &:hover {
+    color: $element-color !important;
+    .menu-image {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      animation: fadeout $fade_time;
+    }
+    .menu-text {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      animation: fadein $fade_time;
+    }
   }
 }
 
@@ -112,16 +119,10 @@ body {
   border: 0;
 }
 
-.center-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.text-line {
-  margin-bottom: -20px
+.title {
+  font-weight: bold;
+  font-size: 60px;
+  color: $element-color;
 }
 
 .letter-container {
@@ -134,21 +135,11 @@ body {
     font-weight: bold;
     font-size: 60px;
     transition: 0.2s;
-  }
-  .letter:hover {
-    color: $element-color;
+    &:hover {
+      color: $element-color;
+    }
   }
 }
 
-.btn-contact {
-  margin-top: 50px;
-  background-color: transparent;
-  color: $element-color;
-  border-color: $element-color !important;
-}
 
-.btn-contact:hover {
-  //animation: jello 2s;
-  background-color: $element-color;
-  color: black;
-}
+

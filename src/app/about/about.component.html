@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="center-content-left">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12">
+        <div class="letter-container" *ngFor="let letter of title" (mouseenter)="mouseIn($event)">
+          <ng-container [ngSwitch]="letter">
+            <span *ngSwitchCase="' '" class="letter">&nbsp;</span>
+            <span *ngSwitchDefault class="letter">{{letter}}</span>
+          </ng-container>
+        </div>
+        <div *ngFor="let text of about">
+          <h2>{{text}}</h2>
+        </div>
+      </div>
+      <div class="col-sm-6 hidden-xs">
+        <div id="container">
+          <div id="cube" class="animate">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

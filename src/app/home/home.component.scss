@@ -1,0 +1,26 @@
+@import "../../assets/css/variables";
+@import "../../assets/css/mixins";
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.text-line {
+  margin-bottom: -20px
+}
+
+.btn-contact {
+  margin-top: 50px;
+  background-color: transparent;
+  color: $element-color;
+  border-color: $element-color !important;
+  &:hover {
+    //animation: jello 2s;
+    background-color: $element-color;
+    color: black;
+  }
+}

@@ -4,6 +4,11 @@ html * {
 body {
   background-color: #252627; }
 
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%); } }
 .navbar-brand {
   color: #ffffff !important; }
 
@@ -33,19 +38,18 @@ body {
     visibility: visible;
     opacity: 1;
     animation: fadein 0.5s; }
-
-#middleMenu li:hover {
-  color: #08fdd8 !important; }
-  #middleMenu li:hover .menu-image {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    animation: fadeout 0.5s; }
-  #middleMenu li:hover .menu-text {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-    animation: fadein 0.5s; }
+  #middleMenu li:hover {
+    color: #08fdd8 !important; }
+    #middleMenu li:hover .menu-image {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      animation: fadeout 0.5s; }
+    #middleMenu li:hover .menu-text {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      animation: fadein 0.5s; }
 
 .fa:hover {
   color: #08fdd8 !important; }
@@ -81,15 +85,10 @@ body {
   background-color: #181818;
   border: 0; }
 
-.center-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white; }
-
-.text-line {
-  margin-bottom: -20px; }
+.title {
+  font-weight: bold;
+  font-size: 60px;
+  color: #08fdd8; }
 
 .letter-container {
   display: inline-block;
@@ -100,17 +99,7 @@ body {
     font-weight: bold;
     font-size: 60px;
     transition: 0.2s; }
-  .letter-container .letter:hover {
-    color: #08fdd8; }
-
-.btn-contact {
-  margin-top: 50px;
-  background-color: transparent;
-  color: #08fdd8;
-  border-color: #08fdd8 !important; }
-
-.btn-contact:hover {
-  background-color: #08fdd8;
-  color: black; }
+    .letter-container .letter:hover {
+      color: #08fdd8; }
 
 /*# sourceMappingURL=styles.css.map */

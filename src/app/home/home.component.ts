@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { rubberAnimation } from "../rubber-animation";
 
 
 @Component({
@@ -13,10 +14,7 @@ export class HomeComponent {
 
   mouseIn(event): void {
     let target = $(event.target);
-    target.addClass('animated rubberBand');
-    target.bind("webkitAnimationEnd mozAnimationEnd animationEnd", () => {
-      target.removeClass('animated rubberBand')
-    })
+    rubberAnimation(target);
   }
 }
 

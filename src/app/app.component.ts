@@ -1,6 +1,5 @@
 ///<reference path="../../node_modules/@types/jquery/index.d.ts"/>
 import { Component, OnInit } from '@angular/core';
-declare let $: JQueryStatic;
 declare let particlesJS: any;
 
 

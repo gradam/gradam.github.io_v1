@@ -1,3 +1,28 @@
+.center-content-vertical {
+  top: 50%;
+  transform: translate(0%, -50%); }
 
+.center-content-horizontal {
+  left: 50%;
+  transform: translate(-50%, 0%); }
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; }
+
+.text-line {
+  margin-bottom: -20px; }
+
+.btn-contact {
+  margin-top: 50px;
+  background-color: transparent;
+  color: #08fdd8;
+  border-color: #08fdd8 !important; }
+  .btn-contact:hover {
+    background-color: #08fdd8;
+    color: black; }
 
 /*# sourceMappingURL=home.component.css.map */
