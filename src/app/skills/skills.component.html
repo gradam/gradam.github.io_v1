@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="center-content-left">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 text">
+        <div class="letter-container" *ngFor="let letter of title" (mouseenter)="mouseIn($event)">
+          <ng-container [ngSwitch]="letter">
+            <span *ngSwitchCase="' '" class="letter">&nbsp;</span>
+            <span *ngSwitchDefault class="letter">{{letter}}</span>
+          </ng-container>
+        </div>
+        <div *ngFor="let text of about">
+          <h2>{{text}}</h2>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div id="myCanvasContainer">
+          <canvas width="{{canvasSize}}" height="{{canvasSize}}" id="{{canvasId}}">
+            <ul>
+              <li *ngFor="let skill of skills">
+                <a href="{{skill.link}}" target="_blank">{{skill.name}}</a>
+              </li>
+            </ul>
+          </canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

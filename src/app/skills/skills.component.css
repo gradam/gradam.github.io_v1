@@ -1,0 +1,29 @@
+.letter {
+  color: #08fdd8; }
+
+.center-content-left {
+  position: absolute; }
+
+@media (min-width: 992px) {
+  .center-content-left {
+    top: 50%;
+    transform: translate(0, -50%); }
+
+  .row {
+    display: flex;
+    justify-content: center; }
+    .row .text {
+      align-self: center; } }
+h2 {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  color: #adadad; }
+
+.row {
+  max-width: 100%; }
+
+a {
+  color: #08fdd8; }
+
+/*# sourceMappingURL=skills.component.css.map */

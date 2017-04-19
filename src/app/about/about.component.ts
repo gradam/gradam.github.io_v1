@@ -11,8 +11,6 @@ import { rubberAnimation } from "../rubber-animation";
 export class AboutComponent {
   about = ABOUT;
   title = 'About me'.split('');
-  title2 = 'About me';
-  showTitle = false;
 
   mouseIn(event): void {
     let target = $(event.target);
