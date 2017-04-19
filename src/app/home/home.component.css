@@ -17,10 +17,9 @@
   .center-content {
     width: 90%; } }
 
-.text-line {
-  margin-bottom: -20px; }
-
 .word {
+  margin-bottom: -15px;
+  margin-top: -15px;
   display: inline-block; }
 
 @media (max-width: 992px) {
