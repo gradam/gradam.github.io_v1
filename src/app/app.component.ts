@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     console.log('Init');
     // Initialize particlesJS
-    particlesJS.load('particles-js', 'assets/js/particlesjs-config.json', function () {
+    particlesJS.load('particles-js', 'vendors/js/particlesjs-config.json', function () {
       console.log('callback - particles.js config loaded');
     });
   }

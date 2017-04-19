@@ -11,7 +11,7 @@
 @media (min-width: 992px) {
   .center-content-left {
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translateY(-50%);
   }
   .row {
     display: flex;

@@ -9,8 +9,25 @@
   color: white;
 }
 
+@media (max-width: 640px) {
+  .center-content {
+    width: 90%;
+  }
+}
+
 .text-line {
   margin-bottom: -20px
+}
+
+.word {
+  display: inline-block;
+}
+
+
+@media (max-width: 992px) {
+  .letter {
+    font-size: 40px;
+  }
 }
 
 .btn-contact {

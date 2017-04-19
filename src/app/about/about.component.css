@@ -8,36 +8,43 @@
     transform: rotateY(0); }
   to {
     transform: rotateY(360deg); } }
+
 @keyframes spin-vertical {
   from {
     transform: rotateX(0); }
   to {
     transform: rotateX(-360deg); } }
+
 @-moz-keyframes spinningH {
   from {
     -moz-transform: rotateX(0deg) rotateY(0deg); }
   to {
     -moz-transform: rotateX(360deg) rotateY(360deg); } }
+
 @-webkit-keyframes spinningH {
   from {
     -webkit-transform: rotateX(0deg) rotateY(0deg); }
   to {
     -webkit-transform: rotateX(360deg) rotateY(360deg); } }
+
 @-o-keyframes spinningH {
   from {
     -o-transform: rotateX(0deg) rotateY(0deg); }
   to {
     -o-transform: rotateX(360deg) rotateY(360deg); } }
+
 @-ms-keyframes spinningH {
   from {
     -ms-transform: rotateX(0deg) rotateY(0deg); }
   to {
     -ms-transform: rotateX(360deg) rotateY(360deg); } }
+
 @keyframes spinningH {
   from {
     transform: rotateX(0deg) rotateY(0deg); }
   to {
     transform: rotateX(360deg) rotateY(360deg); } }
+
 #container {
   -webkit-perspective: 1000px;
   -moz-perspective: 1000px;
@@ -74,7 +81,6 @@
     -o-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d; }
-
   #cube > div {
     position: absolute;
     height: 300px;
@@ -128,6 +134,7 @@
       -ms-transform: rotateX(90deg) translateZ(149px);
       transform: rotateX(90deg) translateZ(149px);
       background-image: url("../../assets/img/cube/postgresql.png"); } }
+
 @media (max-width: 1200px) {
   #cube {
     position: relative;
@@ -144,7 +151,6 @@
     -o-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
     transform-style: preserve-3d; }
-
   #cube > div {
     position: absolute;
     height: 200px;
@@ -198,6 +204,7 @@
       -ms-transform: rotateX(90deg) translateZ(99px);
       transform: rotateX(90deg) translateZ(99px);
       background-image: url("../../assets/img/cube/postgresql.png"); } }
+
 .letter {
   color: #08fdd8; }
 
@@ -207,7 +214,8 @@
 @media (min-width: 992px) {
   .center-content-left {
     top: 50%;
-    transform: translate(0, -50%); } }
+    transform: translateY(-50%); } }
+
 h2 {
   text-align: justify;
   text-justify: inter-word;
@@ -216,5 +224,3 @@ h2 {
 
 .row {
   max-width: 100%; }
-
-/*# sourceMappingURL=about.component.css.map */

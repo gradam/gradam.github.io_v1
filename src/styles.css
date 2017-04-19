@@ -9,6 +9,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translatex(-50%); } }
+
 .navbar-brand {
   color: #ffffff !important; }
 
@@ -62,16 +63,18 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
 @keyframes fadeout {
   0% {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
 .active {
   color: #08fdd8 !important; }
 
 .menu-name {
-  margin: 0; }
+  margin: 120px; }
 
 .secondary {
   background: #181818; }
@@ -101,5 +104,3 @@ body {
     transition: 0.2s; }
     .letter-container .letter:hover {
       color: #08fdd8; }
-
-/*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,10 @@
 .center-content-vertical {
   top: 50%;
-  transform: translate(0%, -50%); }
+  transform: translateY(-50%); }
 
 .center-content-horizontal {
   left: 50%;
-  transform: translate(-50%, 0%); }
+  transform: translateX(-50%); }
 
 .center-content {
   position: absolute;
@@ -13,8 +13,19 @@
   transform: translate(-50%, -50%);
   color: white; }
 
+@media (max-width: 640px) {
+  .center-content {
+    width: 90%; } }
+
 .text-line {
   margin-bottom: -20px; }
+
+.word {
+  display: inline-block; }
+
+@media (max-width: 992px) {
+  .letter {
+    font-size: 40px; } }
 
 .btn-contact {
   margin-top: 50px;
@@ -24,5 +35,3 @@
   .btn-contact:hover {
     background-color: #08fdd8;
     color: black; }
-
-/*# sourceMappingURL=home.component.css.map */

@@ -13,6 +13,7 @@ export const SKILLS = shuffle([
   {name: 'Docker', link: 'https://www.docker.com/'},
   {name: 'DRF', link: 'http://www.django-rest-framework.org/'},
   {name: 'GIT', link: 'https://git-scm.com/'},
+  {name: 'gulp', link: 'http://gulpjs.com/'},
   {name: 'HTML 5', link: 'https://en.wikipedia.org/wiki/HTML5'},
   {name: 'JavaScript', link: 'https://www.javascript.com/'},
   {name: 'JQuery', link: 'https://jquery.com/'},

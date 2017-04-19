@@ -1,12 +1,14 @@
-<div class="container">
+<div class="container-fluid">
   <div class="center-content">
     <div *ngFor="let line of title" class="text-line">
-      <div class="letter-container" *ngFor="let letter of line" (mouseenter)="mouseIn($event)">
-        <ng-container [ngSwitch]="letter">
-          <span *ngSwitchCase="'J'" class="letter initial-letter">{{letter}}</span>
-          <span *ngSwitchCase="' '" class="letter">&nbsp;</span>
-          <span *ngSwitchDefault class="letter">{{letter}}</span>
-        </ng-container>
+      <div class="word" *ngFor="let word of line">
+        <div class="letter-container" *ngFor="let letter of word" (mouseenter)="mouseIn($event)">
+          <ng-container [ngSwitch]="letter">
+            <span *ngSwitchCase="'J'" class="letter initial-letter">{{letter}}</span>
+            <span *ngSwitchCase="' '" class="letter">&nbsp;</span>
+            <span *ngSwitchDefault class="letter">{{letter}}</span>
+          </ng-container>
+        </div>
       </div>
     </div>
     <a rel="contact" routerLink="/contact" class="btn btn-default btn-contact" (mouseover)="mouseIn($event)">
