@@ -141,5 +141,16 @@ body {
   }
 }
 
+.btn-custom {
+  margin-top: 50px;
+  background-color: transparent;
+  color: $element-color;
+  border-color: $element-color !important;
+  &:hover {
+    //animation: jello 2s;
+    background-color: $element-color;
+    color: black;
+  }
+}
 
 

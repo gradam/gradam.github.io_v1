@@ -2,6 +2,7 @@ import { AfterViewInit, Component } from "@angular/core";
 import { SKILLS } from './skills';
 import { ABOUT } from './text';
 import { rubberAnimation } from "../rubber-animation";
+import { Tag } from "@angular/compiler/src/i18n/serializers/xml_helper";
 declare let TagCanvas: any;
 
 @Component({
