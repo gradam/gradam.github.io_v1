@@ -1,3 +1,15 @@
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 html * {
   font-family: 'Archivo Narrow', sans-serif; }
 
@@ -57,18 +69,6 @@ body {
 
 .fa, .navbar-brand {
   transition: color 0.2s ease; }
-
-@keyframes fadein {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fadeout {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
 
 .active {
   color: #08fdd8 !important; }

@@ -2,10 +2,10 @@
 # Converts the Inkscape icon file to png files.
 
 INPUT="logo.svg"
-MAIN="src/img/fav/"
+MAIN="src/assets/img/fav/"
 
 apple_sizes=(57 60 72 76 114 120 144 152 180)
-icon_sizes=(32 96 16 60)
+icon_sizes=(32 96 16 60 400)
 android_sizes=(192)
 
 mkdir -p ${MAIN}

@@ -1,0 +1,18 @@
+<div class="container-fluid" style="padding: 0;">
+  <div class="center-content-left">
+    <div class="grid">
+      <div *ngFor="let work of works" class="grid-item" [style.width.px]="size" [style.height.px]="size">
+        <a href="{{work.link}}" target="_blank" >
+          <div class="img-wrapper">
+            <img src="{{work.image}}" [width]="size">
+            <div class="color">
+            </div>
+            <div class="text">
+              <h1 [style.font-size.px]="size * 0.4">{{work.name}}</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

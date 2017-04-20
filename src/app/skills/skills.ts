@@ -1,4 +1,4 @@
-import { shuffle } from '../shuffle';
+import { shuffle } from '../utils';
 
 export const SKILLS = shuffle([
   {name: 'Agile', link: 'http://agilemanifesto.org/'},
