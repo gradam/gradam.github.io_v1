@@ -1,0 +1,14 @@
+<div class="container-fluid full-height">
+  <div class="row">
+    <div class="col-md-6 column">
+      <div id="text">
+        <button>test</button>
+      </div>
+    </div>
+    <div class="col-md-6 column">
+        <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [styles]="styles">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+    </div>
+  </div>
+</div>

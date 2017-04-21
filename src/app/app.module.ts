@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from "./home/home.component";
 import { AppRoutingModule } from "./app-routing.module";
@@ -19,6 +21,9 @@ import { CVComponent } from "./CV/CV.component";
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyBqDOzQ-M7Fv0ki2lK4m1XEu_DEA-A2Zms'
+    })
   ],
   declarations: [
     AppComponent,
@@ -27,7 +32,7 @@ import { CVComponent } from "./CV/CV.component";
     SkillsComponent,
     ContactComponent,
     WorkComponent,
-    CVComponent
+    CVComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

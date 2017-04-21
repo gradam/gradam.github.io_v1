@@ -1,0 +1,27 @@
+@import "../../assets/css/variables";
+@import "../../assets/css/mixins";
+
+.full-height {
+  position: absolute;
+  //margin-top: $menu-height;
+  padding: 0;
+  margin: 0;
+  height: calc(100vh - #{$menu-height});
+  width: 100%;
+  background-color: #1b6d85;
+}
+
+.row, .column {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+agm-map {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+#text {
+  @extend .center-content;
+}
