@@ -42,7 +42,7 @@ agm-map {
 .text {
   font-size: 40px;
   color: white;
-  transition: 0.2s; }
+  transition: 0.4s; }
 
 @media (max-width: 992px) {
   .text {
@@ -58,4 +58,4 @@ a {
   color: #181818; }
 
 .fa {
-  transition: 0.2s; }
+  transition: 0.4s; }

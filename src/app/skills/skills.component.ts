@@ -49,6 +49,8 @@ export class SkillsComponent implements AfterViewInit {
     TagCanvas.outlineIncrease = 2;
     TagCanvas.textHeight = 20;
     TagCanvas.fadeIn = 3000;
+    TagCanvas.minSpeed = 0.001;
+    TagCanvas.initial = [0.01, 0.01];
     TagCanvas.Start(this.canvasId);
   }
 }
