@@ -4,3 +4,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white; }
+
+.fa:hover {
+  color: #08fdd8 !important; }

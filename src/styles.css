@@ -64,9 +64,6 @@ body {
       opacity: 1;
       animation: fadein 0.5s; }
 
-.fa:hover {
-  color: #08fdd8 !important; }
-
 .fa, .navbar-brand {
   transition: color 0.2s ease; }
 
@@ -110,6 +107,6 @@ body {
   background-color: transparent;
   color: #08fdd8;
   border-color: #08fdd8 !important; }
-  .btn-custom:hover {
+  .btn-custom:hover, .btn-default:focus {
     background-color: #08fdd8;
     color: black; }

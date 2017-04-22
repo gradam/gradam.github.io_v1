@@ -69,16 +69,16 @@ body {
   }
 }
 
-.fa:hover {
-  color: $element-color !important;
-}
-
 .fa, .navbar-brand {
   transition: color 0.2s ease;
 }
 
 .active {
   color: $element-color !important;
+}
+
+.btn-default:focus {
+  @extend .btn-custom:hover
 }
 
 .menu-name {

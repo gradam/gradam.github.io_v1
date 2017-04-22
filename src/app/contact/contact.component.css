@@ -17,8 +17,7 @@
   padding: 0;
   margin: 0;
   height: calc(100vh - 60px);
-  width: 100%;
-  background-color: #1b6d85; }
+  width: 100%; }
 
 .row, .column {
   height: 100%;
@@ -29,3 +28,33 @@ agm-map {
   height: 100%;
   width: 100%;
   padding: 0; }
+
+#text {
+  width: 100%;
+  text-align: center; }
+
+.fa-background {
+  color: #181818; }
+
+.fa-icon {
+  color: #08fdd8; }
+
+.text {
+  font-size: 40px;
+  color: white; }
+
+@media (max-width: 992px) {
+  .text {
+    font-size: 20px; } }
+
+a {
+  text-decoration: none; }
+
+.fa {
+  transition: 0.2s; }
+
+.element:hover .fa-background {
+  color: #08fdd8; }
+
+.element:hover .fa-icon {
+  color: #181818; }
