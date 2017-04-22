@@ -41,7 +41,8 @@ agm-map {
 
 .text {
   font-size: 40px;
-  color: white; }
+  color: white;
+  transition: 0.2s; }
 
 @media (max-width: 992px) {
   .text {
@@ -50,11 +51,11 @@ agm-map {
 a {
   text-decoration: none; }
 
-.fa {
-  transition: 0.2s; }
-
-.element:hover .fa-background {
+#email-link:hover .fa-background, #email-link:hover .text {
   color: #08fdd8; }
 
-.element:hover .fa-icon {
+#email-link:hover .fa-icon {
   color: #181818; }
+
+.fa {
+  transition: 0.2s; }

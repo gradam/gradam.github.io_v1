@@ -1,6 +1,7 @@
 @import "../../assets/css/variables";
 @import "../../assets/css/mixins";
 
+$transition-time: 0.2s;
 .full-height {
   position: absolute;
   //margin-top: $menu-height;
@@ -39,7 +40,9 @@ agm-map {
 .text {
   font-size: 40px;
   color: white;
+  transition: $transition-time;
 }
+
 @media (max-width: 992px) {
   .text {
     font-size: 20px;
@@ -50,15 +53,19 @@ a {
   text-decoration: none;
 }
 
-.fa {
-  transition: 0.2s;
-}
-
-.element:hover {
-  .fa-background {
+#email-link:hover {
+  .fa-background, .text {
     color: $element-color;
   }
   .fa-icon {
     color: $secondary-color;
   }
+}
+
+.fa {
+  transition: $transition-time;
+}
+
+.element:hover {
+
 }
