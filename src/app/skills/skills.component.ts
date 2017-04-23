@@ -3,7 +3,7 @@ import { SKILLS } from './skills';
 import { ABOUT } from './text';
 import { rubberAnimation } from "../rubber-animation";
 import { Tag } from "@angular/compiler/src/i18n/serializers/xml_helper";
-import { fadeInAnimation } from "../_animations/fade-in";
+import { transitionAnimation } from "../_animations/transition";
 declare let TagCanvas: any;
 
 @Component({
@@ -11,10 +11,10 @@ declare let TagCanvas: any;
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
   // make fade in animation available to this component
-  animations: [fadeInAnimation],
+  animations: [transitionAnimation],
 
   // attach the fade in animation to the host (root) element of this component
-  host: {'[@fadeInAnimation]': ''}
+  host: {'[@transitionAnimation]': ''}
 })
 export class SkillsComponent implements AfterViewInit {
   title = 'My skills'.split('');

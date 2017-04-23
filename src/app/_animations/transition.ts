@@ -2,9 +2,9 @@
 import { trigger, state, animate, transition, style } from '@angular/animations';
 let time = '1s';
 
-export const fadeInAnimation =
+export const transitionAnimation =
   // trigger name for attaching this animation to an element using the [@triggerName] syntax
-  trigger('fadeInAnimation', [
+  trigger('transitionAnimation', [
 
     // end state styles for route container (host)
     state('*', style({

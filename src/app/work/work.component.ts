@@ -1,16 +1,16 @@
 import { Component, HostListener } from "@angular/core";
 import { WORKS } from './works';
-import { fadeInAnimation } from "../_animations/fade-in";
+import { transitionAnimation } from "../_animations/transition";
 
 @Component({
   selector: 'work',
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.css'],
   // make fade in animation available to this component
-  animations: [fadeInAnimation],
+  animations: [transitionAnimation],
 
   // attach the fade in animation to the host (root) element of this component
-  host: {'[@fadeInAnimation]': ''}
+  host: {'[@transitionAnimation]': ''}
 })
 export class WorkComponent {
   works = WORKS;

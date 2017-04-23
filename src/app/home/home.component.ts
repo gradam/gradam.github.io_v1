@@ -1,15 +1,15 @@
 import { Component } from "@angular/core";
 import { rubberAnimation } from "../rubber-animation";
-import { fadeInAnimation } from "../_animations/fade-in";
+import { transitionAnimation } from "../_animations/transition";
 
 
 @Component({
   selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  animations: [fadeInAnimation],
+  animations: [transitionAnimation],
   // attach the fade in animation to the host (root) element of this component
-  host: {'[@fadeInAnimation]': ''}
+  host: {'[@transitionAnimation]': ''}
 })
 export class HomeComponent {
   title = ['Hi!', 'I\'m Jakub,', 'full-stack developer.']
