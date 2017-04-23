@@ -1,10 +1,16 @@
 import { Component, HostListener } from "@angular/core";
 import { WORKS } from './works';
+import { fadeInAnimation } from "../_animations/fade-in";
 
 @Component({
   selector: 'work',
   templateUrl: './work.component.html',
-  styleUrls: ['./work.component.css']
+  styleUrls: ['./work.component.css'],
+  // make fade in animation available to this component
+  animations: [fadeInAnimation],
+
+  // attach the fade in animation to the host (root) element of this component
+  host: {'[@fadeInAnimation]': ''}
 })
 export class WorkComponent {
   works = WORKS;
@@ -19,7 +25,7 @@ export class WorkComponent {
     let width = document.documentElement.clientWidth;
     document.documentElement.style.overflowX = 'hidden';
     if (width > 1000) {
-      this.size = width / 5 ;
+      this.size = width / 5;
     }
     else if (width > 800) {
       this.size = width / 3;

@@ -12,7 +12,8 @@
     display: flex;
     justify-content: center; }
     .row .text {
-      align-self: center; } }
+      align-self: center;
+      transform: translateY(-6%); } }
 
 h2 {
   text-align: justify;
