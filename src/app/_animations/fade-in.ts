@@ -17,10 +17,10 @@ export const fadeInAnimation =
     // route 'enter' transition
     transition(':enter', [
       style({
-        opacity: '0',
+        right: '-400%'
       }),
       animate(`${time} ease-in-out`, style({
-        opacity: '1',
+        right: '0%'
       }))
     ]),
     transition(':leave', [
