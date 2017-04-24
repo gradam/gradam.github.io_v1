@@ -12,13 +12,16 @@ export class NavbarComponent {
 
   constructor(private router: Router) {
     router.events.subscribe((event) => {
-      if(event instanceof NavigationStart){
+      if (event instanceof NavigationStart) {
         this.isIn = false;
       }
     })
   }
 
-  toggleState() {
-    this.isIn = !this.isIn
+  toggleState(event) {
+    this.isIn = !this.isIn;
+    if (this.isIn) {
+      console.log(event)
+    }
   }
 }

@@ -67,7 +67,7 @@
     display: inline-block;
     position: absolute;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translateX(-50%);
   }
 
 }
@@ -82,4 +82,25 @@
 
 .fa, .navbar-brand {
   transition: color 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar-right {
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+#collapse-button {
+  border-color: $element-color !important;
+  &:hover, &:active, &:focus {
+    background-color: $element-color !important;
+  }
+}
+
+.in {
+  position: absolute;
+  width: 100%;
+  background-color: $secondary-color;
 }

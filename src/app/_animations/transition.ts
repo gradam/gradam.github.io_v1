@@ -10,7 +10,7 @@ export const transitionAnimation =
     state('*', style({
       position: 'fixed',
       width: '100%',
-      height: '100%'
+      height: 'calc(100% - 100px)'
       // transform: 'translate(-50%, -50%)'
 
     })),

@@ -1,0 +1,76 @@
+.fa:hover {
+  color: #08fdd8 !important; }
+
+#middleMenu li .menu-image {
+  display: block;
+  margin-left: 8px;
+  margin-top: -5px;
+  transition: 0.5s; }
+
+#middleMenu li .menu-text {
+  transition: 0.5s; }
+
+#middleMenu li:hover .menu-text {
+  color: #08fdd8 !important; }
+
+#middleMenu li:hover .menu-image {
+  color: #08fdd8 !important; }
+
+@media (min-width: 768px) {
+  #middleMenu {
+    width: 420px; }
+    #middleMenu li {
+      width: 70px; }
+      #middleMenu li .menu-text {
+        white-space: nowrap;
+        text-align: center;
+        display: none;
+        color: #08fdd8 !important; }
+      #middleMenu li .menu-image {
+        margin-left: 8px;
+        margin-top: -5px;
+        visibility: visible;
+        opacity: 1;
+        animation: fadein 0.5s; }
+      #middleMenu li:hover {
+        color: #08fdd8 !important; }
+        #middleMenu li:hover .menu-image {
+          display: none;
+          visibility: hidden;
+          opacity: 0;
+          animation: fadeout 0.5s; }
+        #middleMenu li:hover .menu-text {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          animation: fadein 0.5s; } }
+
+@media (min-width: 768px) {
+  .navbar-center {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); } }
+
+.navbar-brand {
+  color: #ffffff !important; }
+
+.navbar-brand:hover {
+  color: #08fdd8 !important; }
+
+.fa, .navbar-brand {
+  transition: color 0.2s ease; }
+
+@media (max-width: 768px) {
+  .navbar-right li {
+    display: inline-block; } }
+
+#collapse-button {
+  border-color: #08fdd8 !important; }
+  #collapse-button:hover, #collapse-button:active, #collapse-button:focus {
+    background-color: #08fdd8 !important; }
+
+.in {
+  position: absolute;
+  width: 100%;
+  background-color: #181818; }
