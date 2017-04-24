@@ -7,3 +7,6 @@
   right: 0;
   bottom: 0;
   z-index: -1; }
+
+:host /deep/ router-outlet + *:not(navbar) {
+  position: static !important; }
