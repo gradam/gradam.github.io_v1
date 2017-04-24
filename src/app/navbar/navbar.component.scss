@@ -1,0 +1,85 @@
+@import '../../assets/css/variables';
+
+.fa:hover {
+  color: $element-color !important;
+}
+
+#middleMenu {
+  $element-width: 70px;
+  li {
+    .menu-image {
+      display: block;
+      margin-left: 8px;
+      margin-top: -5px;
+      transition: $fade_time;
+    }
+    .menu-text {
+      transition: $fade_time;
+    }
+    &:hover {
+      .menu-text {
+        color: $element-color !important;
+      }
+      .menu-image {
+        color: $element-color !important;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    width: $element-width * 6;
+    li {
+      width: $element-width;
+      .menu-text {
+        white-space: nowrap;
+        text-align: center;
+        display: none;
+        color: $element-color !important;
+      }
+      .menu-image {
+        //display: block;
+        margin-left: 8px;
+        margin-top: -5px;
+        visibility: visible;
+        opacity: 1;
+        animation: fadein $fade_time;
+      }
+      &:hover {
+        color: $element-color !important;
+        .menu-image {
+          display: none;
+          visibility: hidden;
+          opacity: 0;
+          animation: fadeout $fade_time;
+        }
+        .menu-text {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          animation: fadein $fade_time;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-center {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+}
+
+.navbar-brand:hover {
+  color: $element-color !important;
+}
+
+.fa, .navbar-brand {
+  transition: color 0.2s ease;
+}

@@ -1,68 +1,7 @@
 <body class="home">
 
 <div class="container-fluid page">
-  <div class="nav navbar navbar-default" role="navigation" style="z-index: 3">
-    <div class="navbar-header">
-      <a class="navbar-brand" routerLink="/home">
-        JAKUB SEMIK
-      </a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <!-- Social links -->
-      <ul id="middleMenu" class="nav navbar-nav navbar-center">
-        <li>
-          <a id="home" class="menu-link" routerLink="/home" routerLinkActive="active">
-            <i class="fa fa-home fa-2x menu-image"></i>
-            <i class="menu-text">HOME</i>
-          </a>
-        </li>
-        <li>
-          <a id="about" class="menu-link" routerLink="/about" routerLinkActive="active">
-            <i class="fa fa-user-secret fa-2x menu-image"></i>
-            <i class="menu-text">ABOUT</i>
-          </a>
-        </li>
-        <li>
-          <a id="skills" class="menu-link" routerLink="/skills" routerLinkActive="active">
-            <i class="fa fa-code fa-2x menu-image"></i>
-            <i class="menu-text">SKILLS</i>
-          </a>
-        </li>
-        <li>
-          <a id="work" class="menu-link" routerLink="/work" routerLinkActive="active">
-            <i class="fa fa-cog fa-2x menu-image"></i>
-            <i class="menu-text">MY WORK</i>
-          </a>
-        </li>
-        <li>
-          <a id="contact" class="menu-link" routerLink="/contact" routerLinkActive="active">
-            <i class="fa fa-envelope fa-2x menu-image"></i>
-            <i class="menu-text">CONTACT</i>
-          </a>
-        </li>
-        <li>
-          <a id="CV" class="menu-link" routerLink="/CV" routerLinkActive="active">
-            <i class="fa fa-id-card fa-2x menu-image"></i>
-            <i class="menu-text">CV</i>
-          </a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class="fa fa-github fa-lg social-link" target="_blank" href="https://github.com/gradam">
-          </a>
-        </li>
-        <li>
-          <a class="fa fa-twitter fa-lg social-link" target="_blank" href="https://twitter.com/@Jakub_Semik">
-          </a>
-        </li>
-        <li>
-          <a class="fa fa-linkedin fa-lg social-link" target="_blank" href="https://www.linkedin.com/in/jakub-semik-a4981012a/">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  <navbar></navbar>
   <div id="particles-js"></div>
   <router-outlet></router-outlet>
 </div>

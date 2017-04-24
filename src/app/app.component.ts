@@ -9,6 +9,11 @@ declare let particlesJS: any;
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
+  innerWidth: number;
+
+  constructor() {
+        this.innerWidth = (window.screen.width);
+    }
 
   ngOnInit(): void {
     console.log('Init');
