@@ -45,7 +45,8 @@ img {
   text-align: center;
   transition: 0.75s;
   color: #ffffff;
-  opacity: 0; }
+  opacity: 0;
+  font-size: 5em; }
 
 .center-content-left {
   width: 100%;

@@ -25,4 +25,3 @@ do
     size=${android_sizes[$s]}
     inkscape --export-png "${MAIN}android-icon-${size}x${size}.png" -w ${size} "${INPUT}"
 done
-inkscape --export-png "${MAIN}logo_with_name.png" -w 60 logo_with_name.svg

@@ -39,5 +39,3 @@ export class WorkComponent {
     this.calculateSize();
   }
 }
-
-
