@@ -63,11 +63,49 @@ body {
   background-color: transparent;
   color: $element-color;
   border-color: $element-color !important;
-  &:hover {
+  &:hover, &:active {
     //animation: jello 2s;
     background-color: $element-color;
     color: black;
   }
 }
 
+// Modal styles
+.btn-goto {
+  background-color: $background-color;
+  color: white;
+  transition: .2s;
+  &:hover {
+    color: $element-color;
+  }
+}
 
+.modal-header {
+  background-color: $element-color;
+  border: none;
+}
+
+.modal-footer {
+  background-color: $element-color;
+  text-align: center;
+  border: none;
+}
+
+.modal-body {
+  background-color: $background-color;
+  text-align: center;
+  color: white;
+  p {
+    font-size: 30px;
+  }
+  .text-left {
+    text-align: left;
+  }
+}
+
+.modal-image {
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  border:1px solid black;
+}

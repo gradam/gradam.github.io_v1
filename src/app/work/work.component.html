@@ -2,7 +2,7 @@
   <div class="center-content-left">
     <div class="grid">
       <div *ngFor="let work of works" class="grid-item" [style.width.px]="size" [style.height.px]="size">
-        <a href="{{work.link}}" target="_blank" >
+        <a href="#{{work.id}}Modal" data-toggle="modal" data-target="#{{work.id}}Modal" role="button">
           <div class="img-wrapper">
             <img src="{{work.image}}" [width]="size">
             <div class="color">
@@ -12,6 +12,26 @@
             </div>
           </div>
         </a>
+        <!-- Modal -->
+        <div id="{{work.id}}Modal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">{{work.name}}</h4>
+              </div>
+              <div class="modal-body" [innerHtml]="work.text">
+              </div>
+              <div class="modal-footer">
+                <a href="{{work.link}}" target="_blank" type="button" class="btn btn-lg btn-goto">Go to</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
     </div>
   </div>

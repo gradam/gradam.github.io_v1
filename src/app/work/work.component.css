@@ -37,6 +37,9 @@
 img {
   transition: 0.75s; }
 
+.img-wrapper:hover {
+  cursor: pointer; }
+
 .grid-item {
   display: inline-block; }
 
@@ -55,3 +58,6 @@ img {
 .img-wrapper:hover .text {
   visibility: visible;
   opacity: 1; }
+
+a {
+  outline: none; }

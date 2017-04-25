@@ -2,6 +2,7 @@ import { Component, HostListener } from "@angular/core";
 import { WORKS } from './works';
 import { transitionAnimation } from "../_animations/transition";
 
+
 @Component({
   selector: 'work',
   templateUrl: './work.component.html',
@@ -15,10 +16,9 @@ import { transitionAnimation } from "../_animations/transition";
 export class WorkComponent {
   works = WORKS;
   size: number;
-  grid: any;
 
   constructor() {
-    this.calculateSize()
+    this.calculateSize();
   }
 
   private calculateSize() {

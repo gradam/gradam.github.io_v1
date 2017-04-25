@@ -11,8 +11,6 @@ export const transitionAnimation =
       position: 'fixed',
       width: '100%',
       height: 'calc(100% - 100px)'
-      // transform: 'translate(-50%, -50%)'
-
     })),
     // route 'enter' transition
     transition(':enter', [
@@ -25,7 +23,7 @@ export const transitionAnimation =
     ]),
     transition(':leave', [
       animate(`${time} ease-in-out`, style({
-        opacity: '0'
+        opacity: '0',
       }))
     ])
   ]);
