@@ -2,13 +2,14 @@
   "name": "personal-page",
   "version": "0.0.0",
   "license": "MIT",
+  "main": "index.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve --host 0.0.0.0",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "serve": "http-server . -p 5556",
+    "build": "npm run clean && tsc",
+    "build_prod": "npm run build && browserify -s main dist/main.js > dist/bundle.js && npm run minify",
+    "minify": "uglifyjs dist/bundle.js --screw-ie8 --compress --mangle --output dist/bundle.min.js"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@angular/platform-browser-dynamic": "^4.0.3",
     "@angular/router": "^4.0.3",
     "core-js": "^2.4.1",
+    "es6-shim": "^0.35.3",
     "jquery": "^3.2.1",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
@@ -30,10 +32,12 @@
   "devDependencies": {
     "@angular/cli": "1.0.0",
     "@angular/compiler-cli": "^4.0.3",
+    "@types/core-js": "^0.9.41",
     "@types/jasmine": "2.5.38",
     "@types/jquery": "^2.0.41",
     "@types/node": "~6.0.60",
     "autoprefixer": "^6.7.7",
+    "browserify": "^14.3.0",
     "codelyzer": "~2.0.0",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
@@ -52,7 +56,11 @@
     "node-sass": "^4.5.2",
     "postcss-cssnext": "^2.10.0",
     "protractor": "~5.1.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
     "ts-node": "~2.0.0",
-    "tslint": "~4.5.0"
+    "tslint": "~4.5.0",
+    "typescript": "^2.2.2",
+    "uglifyjs": "^2.4.10"
   }
 }

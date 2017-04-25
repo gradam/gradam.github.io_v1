@@ -1,0 +1,4 @@
+<div class="quote" *ngFor="let quote of quotes" [style.top]="quote.position[1]" [style.left]="quote.position[0]">
+  {{quote.quote}}
+  <p>{{quote.person}}, {{quote.from}}</p>
+</div>

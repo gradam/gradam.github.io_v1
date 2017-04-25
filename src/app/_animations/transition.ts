@@ -27,3 +27,17 @@ export const transitionAnimation =
       }))
     ])
   ]);
+
+
+export const transitionAnimation2 =
+  // trigger name for attaching this animation to an element using the [@triggerName] syntax
+  trigger('transitionAnimation', [
+
+    // end state styles for route container (host)
+    state('*', style({
+      position: 'fixed',
+      width: '100%',
+      height: 'calc(100% - 100px)'
+    })),
+
+  ]);

@@ -9,3 +9,25 @@ export function shuffle(a) {
     }
     return a;
 }
+
+
+/**
+ * @param {elements} iterable.
+ */
+export class GetRandom {
+  elements: any;
+  constructor(elements){
+    this.elements = elements.map((n) => n);
+  }
+
+  private getRandomIndex(): number {
+    return Math.floor(Math.random() * this.elements.length)
+  }
+
+  next():any {
+    if (this.elements == 0){
+      return;
+    }
+    return this.elements.splice(this.getRandomIndex(), 1)[0];
+  }
+}

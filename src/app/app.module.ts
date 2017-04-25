@@ -16,6 +16,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { WorkComponent } from "./work/work.component";
 import { CVComponent } from "./CV/CV.component";
 import { NavbarComponent } from "./navbar/navbar.component";
+import { QuotesComponent } from './quotes/quotes.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { NavbarComponent } from "./navbar/navbar.component";
     ContactComponent,
     WorkComponent,
     CVComponent,
-    NavbarComponent
+    NavbarComponent,
+    QuotesComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

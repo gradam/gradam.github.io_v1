@@ -28,4 +28,6 @@ export const SKILLS = shuffle([
   {name: 'SASS', link: 'http://sass-lang.com/'},
   {name: 'TDD', link: 'http://agiledata.org/essays/tdd.html'},
   {name: 'TypeScript', link: 'https://www.typescriptlang.org/'},
+  {name: 'Communication', link: 'https://m.xkcd.com/1028/'},
+  {name: 'Collaboration', link: 'https://xkcd.com/1254/'}
 ]);

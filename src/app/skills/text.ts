@@ -1,6 +1,7 @@
 export const ABOUT: string[] = [
-  'I\'m 19 years old programmer from Poland and for the last 4 years I am fascinated and I am specializing in programming with Python. ' +
-  'For the last 2 years I\'m focused mostly on a back-end development with Django web framework.',
-  'But I also like to get my hands dirty with a front-end (HTML/CSS/JS, Angular) ' +
-  'or with a data analysis and visualisation in Python.'
+  `I have vast range of technical skills ranging from Angular and HTML in front-end to Django and Python in back-end. 
+  My latest are based on Django, Angular and Amazon Web Services`,
+  `However, working as a developer is not just about the code. It's even more about good communication and collaboration with the rest of the team,
+  I am a huge fan of tools like slack or trello and I encourage every team to use those.
+   `
 ];
