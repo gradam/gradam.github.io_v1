@@ -12,7 +12,7 @@ import { transitionAnimation } from "../_animations/transition";
   host: {'[@transitionAnimation]': ''}
 })
 export class HomeComponent {
-  title = ['Hi!', 'I\'m Jakub,', 'full-stack developer.']
+  title = ['Hi!', 'I\'m Jakub,', 'full stack developer.']
     .map((text) => text.split(' ')
       .map((word) => {
         word = word + ' ';
