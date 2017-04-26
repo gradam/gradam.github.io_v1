@@ -990,7 +990,7 @@ var SKILLS = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__utils__["b" /* s
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ABOUT; });
 var ABOUT = [
-    "I have vast range of technical skills ranging from front-end technologies such as Angular and HTML to Django and Python for back-end development.\n  My latest projects are based on Django, Angular and Amazon Web Services",
+    "I have vast range of technical skills ranging from front-end technologies such as Angular and HTML through Django and Python for back-end development.\n  My latest projects are based on Django, Angular and Amazon Web Services",
     "However, working as a developer is not just about the code. It's even more about good communication and collaboration with the rest of the team,\n  I am a huge fan of tools like slack or trello and I encourage every team to use those."
 ];
 //# sourceMappingURL=text.js.map
