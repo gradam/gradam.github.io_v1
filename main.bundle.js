@@ -1259,7 +1259,7 @@ module.exports = module.exports.toString();
 /***/ 362:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div class=\"center-content\">\n    <a rel=\"contact\" href=\"https://drive.google.com/open?id=0B9MLAnzhfvazcE5pWklzaF9hM0E\" target=\"_blank\"\n       class=\"btn btn-lg btn-custom\" (mouseover)=\"mouseIn($event)\">\n      DOWNLOAD CV\n    </a>\n  </div>\n  <quotes></quotes>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\n  <div class=\"center-content\">\n    <a rel=\"contact\" href=\"https://drive.google.com/open?id=0B9MLAnzhfvazcE5pWklzaF9hM0E\" target=\"_blank\"\n       class=\"btn btn-lg btn-custom\" (mouseover)=\"mouseIn($event)\">\n      DOWNLOAD CV\n    </a>\n  </div>\n  <quotes style=\"z-index: -100\"></quotes>\n</div>\n"
 
 /***/ }),
 
