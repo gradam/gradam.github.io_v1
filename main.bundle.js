@@ -468,10 +468,10 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ABOUT; });
 var ABOUT = [
-    'Hey, I\'m a 19 year old programmer from Poland passionate about code, startups, technology and science.',
+    'Hey, I\'m a 19-year-old programmer from Poland passionate about code, startups, technology and science.',
     'For the last 4 years I\'ve been fascinated with cutting-edge technologies and I\'ve been specializing in programming with Python, ' +
         'lately I\'ve been focused mostly on a back-end development with Django web framework.',
-    'In addition I like to immerse myself in a front-end development (HTML/CSS/JS, Angular) or data analysis and visualisation in Python.'
+    'In addition, I like to immerse myself in a front-end development (HTML/CSS/JS, Angular) or data analysis and visualisation in Python.'
 ];
 //# sourceMappingURL=text.js.map
 
