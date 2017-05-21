@@ -1027,7 +1027,7 @@ var VEEU_TEXT = "\n<div><h1>What is veeu? Veeu is a media sharing social network
 
 
 var WORKS = [
-    { name: 'VeeU', image: '../../assets/img/work/veeu/logo.png', link: 'http://veeu.co/', text: __WEBPACK_IMPORTED_MODULE_0__texts_veeu__["a" /* VEEU_TEXT */], id: 1 },
+    { name: 'VeeU', image: '../../assets/img/work/veeu/logo.png', link: 'http://www.veeu.co/', text: __WEBPACK_IMPORTED_MODULE_0__texts_veeu__["a" /* VEEU_TEXT */], id: 1 },
     { name: 'Portfolio page', image: '../../assets/img/work/portfolio-page/logo.png', link: 'https://jakubsemik.com', text: __WEBPACK_IMPORTED_MODULE_1__texts_portfolio_page__["a" /* PORTFOLIO_PAGE_TEXT */], id: 2 },
 ];
 //# sourceMappingURL=works.js.map
