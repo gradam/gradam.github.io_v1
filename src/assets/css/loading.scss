@@ -1,0 +1,7 @@
+@import 'variables';
+@import 'mixins';
+
+.loading {
+  @extend .center-content;
+  color: $element-color;
+}
