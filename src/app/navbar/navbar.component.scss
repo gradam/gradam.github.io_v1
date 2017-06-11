@@ -15,6 +15,7 @@
     }
     .menu-text {
       transition: $fade_time;
+      font-style: normal;
     }
     &:hover {
       .menu-text {

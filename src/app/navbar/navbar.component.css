@@ -8,7 +8,8 @@
   transition: 0.5s; }
 
 #middleMenu li .menu-text {
-  transition: 0.5s; }
+  transition: 0.5s;
+  font-style: normal; }
 
 #middleMenu li:hover .menu-text {
   color: #08fdd8 !important; }
