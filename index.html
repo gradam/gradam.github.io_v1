@@ -13,14 +13,14 @@
   <meta property="og:title" content="Jakub Semik - Full stack developer">
   <meta property="og:description" content="Full stack developer portfolio, looking for great opportunities">
   <meta property="og:url" content="https://jakubsemik.com">
-  <meta property="og:image" content="https://jakubsemik.com/assets/img/fav/favicon-400x400.png" />
+  <meta property="og:image" content="https://jakubsemik.com/assets/img/fav/favicon-400x400.png"/>
   <meta property="og:site_name" content="Jakub Semik - Full stack developer">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:description" content="Full stack developer portfolio, looking for great opportunities">
   <meta name="twitter:title" content="Jakub Semik - Full stack developer">
   <meta name="twitter:site" content="@Jakub_Semik">
   <meta name="twitter:creator" content="@Jakub_Semik">
-  <meta name="twitter:image" content="https://jakubsemik.com/assets/img/fav/favicon-400x400.png" />
+  <meta name="twitter:image" content="https://jakubsemik.com/assets/img/fav/favicon-400x400.png"/>
   <!-- Google analytics -->
   <script>
     (function (i, s, o, g, r, a, m) {
@@ -61,10 +61,16 @@
   <!--Bootstrap and font awesome css for code completion -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/loading.css">
 </head>
 
 <body>
-<app-root>Loading...</app-root>
+<app-root>
+  <div class="loading">
+    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+    </div>
+</app-root>
 <script src="vendors/js/particles.min.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"

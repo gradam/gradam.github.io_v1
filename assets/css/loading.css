@@ -1,0 +1,16 @@
+.center-content-vertical {
+  top: 50%;
+  transform: translateY(-50%); }
+
+.center-content-horizontal {
+  left: 50%;
+  transform: translateX(-50%); }
+
+.center-content, .loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.loading {
+  color: #08fdd8; }
