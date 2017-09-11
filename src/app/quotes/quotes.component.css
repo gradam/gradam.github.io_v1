@@ -1,0 +1,13 @@
+.quote {
+  position: absolute;
+  color: #adadad;
+  max-width: 30%;
+  font-size: 18px; }
+  .quote p {
+    color: white;
+    font-family: 'Satisfy', 'Archivo Narrow', sans-serif; }
+
+@media (max-width: 786px) {
+  .quote {
+    max-width: 90%;
+    font-size: 15px; } }

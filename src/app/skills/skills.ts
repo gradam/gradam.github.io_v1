@@ -29,5 +29,8 @@ export const SKILLS = shuffle([
   {name: 'TDD', link: 'http://agiledata.org/essays/tdd.html'},
   {name: 'TypeScript', link: 'https://www.typescriptlang.org/'},
   {name: 'Communication', link: 'https://m.xkcd.com/1028/'},
-  {name: 'Collaboration', link: 'https://xkcd.com/1254/'}
+  {name: 'Collaboration', link: 'https://xkcd.com/1254/'},
+  {name: 'ArangoDB', link: 'https://www.arangodb.com/'},
+  {name: 'flask', link: 'http://flask.pocoo.org/'},
+  {name: 'PWA', link: 'https://developers.google.com/web/progressive-web-apps/'}
 ]);
