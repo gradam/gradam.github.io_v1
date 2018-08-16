@@ -1,6 +1,6 @@
 export const ABOUT: string[] = [
-  'Hey, I\'m a 19-year-old programmer from Poland passionate about code, startups, technology and science.',
-  'For the last 4 years I\'ve been fascinated with cutting-edge technologies and I\'ve been specializing in programming with Python, ' +
+  'Hey, I\'m a 20-year-old programmer from Poland passionate about code, startups, technology and science.',
+  'For the last 5 years I\'ve been fascinated with cutting-edge technologies and I\'ve been specializing in programming with Python and JS, ' +
   'lately I\'ve been focused mostly on a back-end development with Django web framework.',
-  'In addition, I like to immerse myself in a front-end development (HTML/CSS/JS, Angular) or data analysis and visualisation in Python.'
+  'In addition, I like to immerse myself in a front-end development (HTML/CSS/JS, React).'
 ];
