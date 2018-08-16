@@ -1,15 +1,15 @@
 webpackJsonp([2,4],{
 
-/***/ 175:
+/***/ 174:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(351);
+var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(399)(content, {});
+var update = __webpack_require__(400)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -84,7 +84,7 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 351:
+/***/ 352:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(19)();
@@ -92,14 +92,14 @@ exports = module.exports = __webpack_require__(19)();
 
 
 // module
-exports.push([module.i, "@-webkit-keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\nhtml * {\n  font-family: 'Archivo Narrow', sans-serif; }\n\nbody {\n  background-color: #252627; }\n\n.active {\n  color: #08fdd8 !important; }\n\n.menu-name {\n  margin: 120px; }\n\n.secondary {\n  background: #181818; }\n\n.page {\n  padding: 0; }\n\n.navbar {\n  margin: 0;\n  border-radius: 0;\n  background-color: #181818;\n  border: 0; }\n\n.title {\n  font-weight: bold;\n  font-size: 60px;\n  color: #08fdd8; }\n\n.letter-container {\n  display: inline-block;\n  text-align: center; }\n  .letter-container .initial-letter {\n    color: #08fdd8; }\n  .letter-container .letter {\n    font-weight: bold;\n    font-size: 60px;\n    transition: 0.2s; }\n    .letter-container .letter:hover {\n      color: #08fdd8; }\n\n.btn-custom {\n  margin-top: 50px;\n  background-color: transparent;\n  color: #08fdd8;\n  border-color: #08fdd8 !important; }\n  .btn-custom:hover, .btn-default:focus, .btn-custom:active {\n    background-color: #08fdd8;\n    color: black; }\n\n.btn-goto {\n  background-color: #252627;\n  color: white;\n  transition: .2s; }\n  .btn-goto:hover {\n    color: #08fdd8; }\n\n.modal-header {\n  background-color: #08fdd8;\n  border: none; }\n\n.modal-footer {\n  background-color: #08fdd8;\n  text-align: center;\n  border: none; }\n\n.modal-body {\n  background-color: #252627;\n  text-align: center;\n  color: white; }\n  .modal-body p {\n    font-size: 30px; }\n  .modal-body .text-left {\n    text-align: left; }\n\n.modal-image {\n  margin-top: 20px;\n  max-width: 100%;\n  max-height: 100%;\n  border: 1px solid black; }\n", ""]);
+exports.push([module.i, "@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\nhtml * {\n  font-family: 'Archivo Narrow', sans-serif; }\n\nbody {\n  background-color: #252627; }\n\n.active {\n  color: #08fdd8 !important; }\n\n.menu-name {\n  margin: 120px; }\n\n.secondary {\n  background: #181818; }\n\n.page {\n  padding: 0; }\n\n.navbar {\n  margin: 0;\n  border-radius: 0;\n  background-color: #181818;\n  border: 0; }\n\n.title {\n  font-weight: bold;\n  font-size: 60px;\n  color: #08fdd8; }\n\n.letter-container {\n  display: inline-block;\n  text-align: center; }\n  .letter-container .initial-letter {\n    color: #08fdd8; }\n  .letter-container .letter {\n    font-weight: bold;\n    font-size: 60px;\n    transition: 0.2s; }\n    .letter-container .letter:hover {\n      color: #08fdd8; }\n\n.btn-custom {\n  margin-top: 50px;\n  background-color: transparent;\n  color: #08fdd8;\n  border-color: #08fdd8 !important; }\n  .btn-custom:hover, .btn-default:focus, .btn-custom:active {\n    background-color: #08fdd8;\n    color: black; }\n\n.btn-goto {\n  background-color: #252627;\n  color: white;\n  transition: .2s; }\n  .btn-goto:hover {\n    color: #08fdd8; }\n\n.modal-header {\n  background-color: #08fdd8;\n  border: none; }\n\n.modal-footer {\n  background-color: #08fdd8;\n  text-align: center;\n  border: none; }\n\n.modal-body {\n  background-color: #252627;\n  text-align: center;\n  color: white; }\n  .modal-body p {\n    font-size: 30px; }\n  .modal-body .text-left {\n    text-align: left; }\n\n.modal-image {\n  margin-top: 20px;\n  max-width: 100%;\n  max-height: 100%;\n  border: 1px solid black; }\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 399:
+/***/ 400:
 /***/ (function(module, exports) {
 
 /*
@@ -352,13 +352,13 @@ function updateLink(linkElement, obj) {
 
 /***/ }),
 
-/***/ 403:
+/***/ 404:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(175);
+module.exports = __webpack_require__(174);
 
 
 /***/ })
 
-},[403]);
+},[404]);
 //# sourceMappingURL=styles.bundle.js.map
